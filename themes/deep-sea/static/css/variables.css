@@ -1,0 +1,29 @@
+:root {
+    --title-color: #FFFFFF;
+    --subtitle-color: #FFFFFF;
+    --text-color: #939EBF;
+    --link-color: #67CC8E;
+    --tags-text-color: #67CC8E;
+    --tags-bg-color: #678895;
+    --footer-bg-color: #012646;
+    --tabs-highlight-color: #67CC8E;
+    --button-text-color:  #67CC8E;
+    --button-border-color: #67CC8E;
+    --button-hover-color: #678895;
+    --main-font: 'Helvetica Neue';
+    --mono-font: 'Roboto Mono', monospace;
+    
+    --button-text-size: 15px;
+    --title-size: 40px;
+    --subtitle-size: 30px;
+    --text-size: 20px;
+    --tags-text-size: 14px;
+    --text-small: 10px;
+
+    --icon-size: 32px;
+
+    --single-margin: 16px;
+    --double-margin: 32px;
+    --single-padding: 16px;
+    --double-padding: 32px;
+}

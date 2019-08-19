@@ -26,6 +26,7 @@ CONFIG = {
     'commit_message': "'Publish site on {}'".format(datetime.date.today().isoformat()),
     # Port for `serve`
     'port': 8000,
+    'cname': SETTINGS['DOMAIN'],
 }
 
 @task
@@ -85,19 +86,19 @@ def livereload(c):
     # Watch the base settings file
     server.watch(CONFIG['settings_base'], lambda: build(c))
     # Watch content source files
-    content_file_extensions = ['.md', '.rst']
+    content_file_extensions = ['.md', '.rst', '.json']
     for extension in content_file_extensions:
         content_blob = '{0}/**/*{1}'.format(SETTINGS['PATH'], extension)
         server.watch(content_blob, lambda: build(c))
     # Watch the theme's templates and static assets
     theme_path = SETTINGS['THEME']
     server.watch('{}/templates/*.html'.format(theme_path), lambda: build(c))
-    static_file_extensions = ['.css', '.js']
+    static_file_extensions = ['.css', '.js', '.json']
     for extension in static_file_extensions:
         static_file = '{0}/static/**/*{1}'.format(theme_path, extension)
         server.watch(static_file, lambda: build(c))
     # Serve output path on configured port
-    server.serve(port=CONFIG['port'], root=CONFIG['deploy_path'])
+    server.serve(host='0.0.0.0', port=CONFIG['port'], root=CONFIG['deploy_path'])
 
 
 @task
@@ -114,6 +115,6 @@ def publish(c):
 def gh_pages(c):
     """Publish to GitHub Pages"""
     preview(c)
-    c.run('ghp-import -b {github_pages_branch} '
+    c.run('ghp-import -c {cname} -b {github_pages_branch} '
           '-m {commit_message} '
           '{deploy_path} -p'.format(**CONFIG))
