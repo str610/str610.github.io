@@ -1,51 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html lang="en">
+    <head>
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="https://luissaul.dev/theme/css/variables.css">
+        <link rel="stylesheet" type="text/css" href="https://luissaul.dev/theme/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://luissaul.dev/theme/css/styles-mobile.css">
+
+        <!-- Google Fonts -->
+<!-- 
+        <link href="//fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+ -->
         <meta charset="utf-8" />
-        <title>Luis' Blog</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Luis' Blog Atom Feed" />
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Luis' Blog </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/about.html">About</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-<h2>Pages</h2>
-        <li><a href="/pages/about.html">About</a></li>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
+        <title>Luis' Site</title>
+    </head>
+    <body>
+        <header></header>
+        <div id="content">
+            <section id="summary">
+                <label>Welcome, my name is</label>
+                <h1>Luis Trinidad.</h1>
+                <h2>I build projects for the web.</h2>
+                <p>
+                    I’m a full-stack software engineer specialized in Python and Javascript residing in
+                    the Dominican Republic. I enjoy building clean and performant applications from
+                    the back to the front and everything in-between.
+                </p>
+                <div class="socials">
+                        <a href="https://codepen.io/-str-/" target="_blank">
+                            <img src="/theme/images/codepen.svg" alt="CodePen" />
+                        </a>
+                        <a href="https://github.com/str610/" target="_blank">
+                            <img src="/theme/images/github.svg" alt="GitHub" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/strinidad/?locale=en_US" target="_blank">
+                            <img src="/theme/images/linkedin.svg" alt="LinkedIn" />
+                        </a>
+                </div>
+            </section>
+            <section id="about">
+                <div>
+                    <header><h3>About Me</h3></header>
+                    <section>
+                        <p>
+                            I’m a full-stack software engineer specialized in Python
+                            and Javascript currently residing in the Dominican Republic.
+                            I enjoy building clean and performant software products
+                            and I’ve been doing so a in professional environments
+                            since 2013.
+                        </p>
+                        <br />
+                        <p>
+                            I graduated from <a href="https://www.intec.edu.do/en/" target="blank">university</a> back in 2016
+                            and followed up with a masters in the <a href="https://www.wlv.ac.uk" target="_blank">University of Wolverhampton</a>.
+                        </p>
+                        <ul class="taglist">
+                            <li class="tag">python</li>
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">django</li>
+                            <li class="tag">flask</li>
+                            <li class="tag">twisted</li>
+                            <li class="tag">angular</li>
+                            <li class="tag">MySQL</li>
+                            <li class="tag">MongoDB</li>
+                            <li class="tag">docker</li>
+                            <li class="tag">Amazon Web Services (AWS)</li>
+                            <li class="tag">Remote Work</li>
                         </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                    </section>
+                </div>
+                <figure>
+                    <img src="https://luissaul.dev/images/portrait.png" alt="Profile Image (Me in Sicily, Italy)" />
+                </figure>
+            </section>
+            <section id="experience">
+                <header><h3>Experience</h3></header>
+                <section>
+                    <div id="experience-tabs"></div>
+                </section>
+            </section>
+            <section id="projects">
+                <header><h3>Projects</h3></header>
+                <section>
+                    <div class="project">
+                        <div class="description">
+                            <h4>PiReports</h4>
+                            <h6><a href="https://www.pireports.net/" target="_blank">https://www.pireports.net/</a></h6>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+                            <p>
+                                PiReports is a SaaS platform that gives customers the flexbility of generating tailored reports on
+                                their sales data. Two of its major selling points are that; customers can track depleting stock based
+                                on the atomatically tracked sales, and that it offers a near-real-time synchronization of the sales.
+                            </p>
+                            <br />
+                            <p>
+                                It has a web platform build with Angular and a hybrid mobile app built with Ionic Framework, both of
+                                which communicates with a REST API written in Python/Flask.
+                            </p>
+                            <ul class="taglist">
+                                <li class="tag">python</li>
+                                <li class="tag">flask</li>
+                                <li class="tag">TypeScript</li>
+                                <li class="tag">angular</li>
+                                <li class="tag">ionic</li>
+                                <li class="tag">twisted</li>
+                                <li class="tag">MySQL</li>
+                                <li class="tag">MongoDB</li>
+                                <li class="tag">REST APIs</li>
+                                <li class="tag">Reactive Programming</li>
+                                <li class="tag">Docker</li>
+                            </ul>
+                        </div>
+                        <figure>
+                            <img src="https://luissaul.dev/images/pireports.png" title="PiReports" />
+                        </figure>
+                    </div>
+                    <div class="project">
+                        <div class="description">
+                            <h4>CloudReports</h4>
+                            <h6><a href="https://www.cloudreports.biz/" target="_blank">https://www.cloudreports.biz/</a></h6>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+                            <p>
+                                CloudReports is an enterprise management web application written in Python/Django supported by a BackboneJS
+                                code base for the dynamic content. It was initially aimed at restaurants but has evolved into an adaptable
+                                solution for any commercial operation. The platform offers features ranging from human resources management
+                                to accounting and financial reporting.
+                            </p>
+                            <ul class="taglist">
+                                <li class="tag">python</li>
+                                <li class="tag">django</li>
+                                <li class="tag">JavaScript</li>
+                                <li class="tag">BackboneJS</li>
+                                <li class="tag">MySQL</li>
+                                <li class="tag">MongoDB</li>
+                                <li class="tag">Docker</li>
+                            </ul>
+                        </div>
+                        <figure>
+                            <img src="https://luissaul.dev/images/cloudreports.png" title="CloudReports" />
+                        </figure>
+                    </div>
+                    <div class="project">
+                        <div class="description">
+                            <h4>Xuxer</h4>
+                            <h6><a href="https://app.xuxer.com/" target="_blank">https://app.xuxer.com/</a></h6>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+                            <p>
+                                Xuxer is an Angular single-page application talking to a Java backend hosted on Amazon Web Services. Its
+                                main function is to handle payments for drivers of medical taxi services in the USA.
+                            </p>
+                            <ul class="taglist">
+                                <li class="tag">TypeScript</li>
+                                <li class="tag">Angular</li>
+                                <li class="tag">Angular Material</li>
+                                <li class="tag">REST APIs</li>
+                                <li class="tag">Reactive Programming</li>
+                                <li class="tag">AWS</li>
+                            </ul>
+                        </div>
+                        <figure>
+                            <img src="https://luissaul.dev/images/xuxer.png" title="Xuxer" />
+                        </figure>
+                    </div>
+                </section>
+            </section>
 
-</body>
+            <hr class="contact-divider" />
+
+            <section id="contact">
+                <header><h3>Contact Me</h3></header>
+                <section>
+                    <p>I'm actively look for new challenges! Contact me and I will answer as soons as I see your e-mail.</p>
+
+                    <a href="mailto:trinidad2425@gmail.com" aria-label="Email Me">trinidad2425@gmail.com</a>
+                    <button type="button" class="outlined" onclick="javascript: window.open('https://luissaul.dev/files/Luis Resume.pdf', '_blank')">Download Resume</button>
+                </section>
+            </section>
+
+        </div>
+        <footer>
+            <label>With love by Luis Trinidad</label>
+            <div id="github-stars-holder"
+                 data-star-image-url="https://luissaul.dev/theme/images/star.svg"
+                 data-repository-url="https://github.com/str610/str610.github.io"></div>
+            <small class="credits">
+                Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by  <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </small>
+        </footer>
+
+        <!-- Scripts -->
+        <script type="text/Javascript" src="https://luissaul.dev/theme/js/react.production.min.js"></script>
+        <script type="text/Javascript" src="https://luissaul.dev/theme/js/react-dom.production.min.js"></script>
+        <script type="text/Javascript" src="https://luissaul.dev/theme/js/retabs.js"></script>
+        <script type="text/Javascript" src="https://luissaul.dev/theme/js/github-stars-count.js"></script>
+    </body>
 </html>
+
+
+<!-- Paste this in the footer -->
+<!--  -->

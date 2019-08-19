@@ -1,0 +1,58 @@
+{
+    "experiences": [
+        {
+            "role": "Software Development Manager",
+            "company": "CloudReports International LTD",
+            "period": {
+                "from": 2016,
+                "to": null
+            },
+            "milestones": [
+                "Managing a small team assigned with the task of creating and maintaining multiple software plataforms.",
+                "Designing and implementing several APIs using back-end technologies such as Python, Django and Flask.",
+                "Managing services for the company's interconnected SaaS solutions deployed under a docker swarm.",
+                "Building single-page applications from conception to deployment (Angular, Ionic).",
+                "Remote development experience."
+            ]
+        },
+        {
+            "role": "Remote Full-Stack Developer",
+            "company": "Xuxer",
+            "period": {
+                "from": 2017,
+                "to": null
+            },
+            "milestones": [
+                "Building an Angular web application for the management of medical taxi services.",
+                "Configuring the deployment of our REST service for production and test environments on AWS.",
+                "Coached a new team member into understanding our Angular codebase."
+            ]
+        },
+        {
+            "role": "Software Engineer",
+            "company": "Newtech SRL",
+            "period": {
+                "from": 2015,
+                "to": 2016
+            },
+            "milestones": [
+                "Migrated a legacy business critical client-side portal to a single-page application.",
+                "Praised for rising the test coverage from 40% to the minimum of 75% in month one.",
+                "Guided two new coworkers getting used to the team's tech stack."
+            ]
+        },
+        {
+            "role": "Full Stack Developer",
+            "company": "PP Operaciones SRL",
+            "period": {
+                "from": 2013,
+                "to": 2015
+            },
+            "milestones": [
+                "Maintained a Python-Django backend for an enterprise management software.",
+                "Built a dynamic font-end based on BackboneJS templating system.",
+                "Contributed a widely used JavaScript library for handling of lazy loaded list items."
+            ]
+        }
+    ]
+}

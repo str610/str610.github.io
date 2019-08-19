@@ -1,0 +1,49 @@
+@media only screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    body > header {
+        display: none;
+    }
+
+    body #content {
+        padding-left: var(--single-padding);
+        padding-right: var(--single-padding);
+    }
+
+    section#summary {
+        height: calc(100vh - var(--single-margin) - var(--single-margin));
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    section#about {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    section#about figure img {
+        border-radius: 50%;
+    }
+    section#about div {
+        width: unset;
+    }
+    section#about figure {
+        width: unset;
+        margin-bottom: var(--single-margin);
+    }
+
+    section#experience {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section#projects section .project {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section#projects section .project .description p {
+        width: auto;
+        max-width: unset;
+    }
+}
