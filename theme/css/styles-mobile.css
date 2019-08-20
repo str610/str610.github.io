@@ -46,4 +46,8 @@
         width: auto;
         max-width: unset;
     }
+
+    section#contact section p {
+        width: auto;
+    }
 }
